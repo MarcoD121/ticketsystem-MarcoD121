@@ -14,7 +14,7 @@ namespace TicketClassLibrary.Tests
         [TestMethod()]
         public void PriceTest()
         {
-            var car = new Car();
+            Vehicle car = new Car();
             double price = car.Price();
             Assert.AreEqual(240, price, 0.01);
         }
@@ -22,7 +22,7 @@ namespace TicketClassLibrary.Tests
         [TestMethod()]
         public void VehicleTypeTest()
         {
-            var vehicle = new Car();
+            Vehicle vehicle = new Car();
             string vehicleType = vehicle.VehicleType();
             Assert.AreEqual("Car", vehicleType);
         }

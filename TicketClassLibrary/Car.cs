@@ -1,15 +1,13 @@
 ﻿namespace TicketClassLibrary
 {
-    public class Car
+    public class Car : Vehicle
     {
-        public string Licenseplate { get; set; }
-        public DateTime Date { get; set; }
 
         /// <summary>
         /// Returns the price of the vehicle
         /// </summary>
         /// <returns>A double representing the price of the vehicle</returns>
-        public double Price()
+        public override double Price()
         {
             return 240;
         }
@@ -18,7 +16,7 @@
         /// Returns the type of the vehicle
         /// </summary>
         /// <returns>A string representing the vehicle type</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }
