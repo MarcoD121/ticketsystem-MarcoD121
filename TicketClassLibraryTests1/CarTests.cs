@@ -26,5 +26,25 @@ namespace TicketClassLibrary.Tests
             string vehicleType = vehicle.VehicleType();
             Assert.AreEqual("Car", vehicleType);
         }
+
+        [TestMethod]
+        [DataRow("123456")]
+        [DataRow("1234567")]
+        public void LisenceplateOK(string lisenceplate)
+        {
+            Vehicle vehicle = new Car();
+            vehicle.Licenseplate = lisenceplate;
+            Assert.AreEqual(vehicle.Licenseplate.Length, lisenceplate.Length);
+        }
+
+        [TestMethod]
+        [DataRow("12345678")]
+        [ExpectedException(typeof(ArgumentException))]
+        public void LisenceplateNotOK(string lisenceplate)
+        {
+            Vehicle vehicle = new Car();
+            vehicle.Licenseplate = lisenceplate;
+            Assert.Fail();
+        }
     }
 }

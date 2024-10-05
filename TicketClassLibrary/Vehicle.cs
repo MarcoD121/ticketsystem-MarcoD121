@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,26 @@ namespace TicketClassLibrary
 {
     public abstract class Vehicle
     {
-        public string Licenseplate { get; set; }
+        private string _licensePlate;
+        public string Licenseplate
+        {
+            get
+            {
+                return _licensePlate;
+            }
+
+            set
+            {
+                if (value.Length > 7)
+                {
+                    throw new ArgumentException("License plate is too long, must be below 7 characters");
+                }
+                else
+                {
+                    _licensePlate = value;
+                }
+            }
+        }
         public DateTime Date { get; set; }
 
         /// <summary>
