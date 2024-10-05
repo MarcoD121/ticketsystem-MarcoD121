@@ -35,9 +35,19 @@ namespace TicketClassLibrary
         /// Returns the price of the vehicle
         /// </summary>
         /// <returns>A double representing the price of the vehicle</returns>
-        public virtual double Price()
+        public virtual double Price(bool discount)
         {
-            return 0;
+            return 0*Brobizz(discount);
+        }
+
+        /// <summary>
+        /// Returns the amount of discount of the ticket
+        /// </summary>
+        /// <param name="discount"></param>
+        /// <returns>A double that represents the discount of the ticket </returns>
+        public double Brobizz(bool discount)
+        {
+            return discount ? 0.95: 1;
         }
 
         /// <summary>

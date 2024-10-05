@@ -7,9 +7,9 @@
         /// Returns the price of the vehicle
         /// </summary>
         /// <returns>A double representing the price of the vehicle</returns>
-        public override double Price()
+        public override double Price(bool discount)
         {
-            return 240;
+            return 240*Brobizz(discount);
         }
 
         /// <summary>

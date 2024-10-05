@@ -15,8 +15,15 @@ namespace TicketClassLibrary.Tests
         public void PriceTest()
         {
             Vehicle car = new Car();
-            double price = car.Price();
+            double price = car.Price(false);
             Assert.AreEqual(240, price, 0.01);
+        }
+        [TestMethod()]
+        public void PriceTestWithDiscount()
+        {
+            Vehicle vehicle = new Car();
+            double price = vehicle.Price(true);
+            Assert.AreEqual(240 * 0.95, price, 0.01);
         }
 
         [TestMethod()]

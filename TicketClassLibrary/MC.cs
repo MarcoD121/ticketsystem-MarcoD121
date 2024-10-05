@@ -12,9 +12,9 @@ namespace TicketClassLibrary
         /// Returns the price of the vehicle
         /// </summary>
         /// <returns>A double representing the price of the vehicle</returns>
-        public override double Price()
+        public override double Price(bool discount)
         {
-            return 125;
+            return 125*Brobizz(discount);
         }
 
         /// <summary>
