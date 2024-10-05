@@ -16,12 +16,11 @@ namespace TicketClassLibrary
             {
                 return _licensePlate;
             }
-
             set
             {
                 if (value.Length > 7)
                 {
-                    throw new ArgumentException("License plate is too long, must be below 7 characters");
+                    throw new Exception("License plate is too long, must be below 7 characters");
                 }
                 else
                 {

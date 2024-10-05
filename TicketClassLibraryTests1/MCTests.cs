@@ -17,6 +17,7 @@ namespace TicketClassLibraryTests
             double price = vehicle.Price(false);
             Assert.AreEqual(125, price, 0.01);
         }
+
         [TestMethod()]
         public void PriceTestWithDiscount()
         {
@@ -45,7 +46,7 @@ namespace TicketClassLibraryTests
 
         [TestMethod]
         [DataRow("12345678")]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(Exception))]
         public void LisenceplateNotOK(string lisenceplate)
         {
             Vehicle vehicle = new MC();

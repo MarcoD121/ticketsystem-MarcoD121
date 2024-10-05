@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:TicketClassLibrary.Car.Price(System.Boolean)">
+            <summary>
+            Returns the price of the vehicle
+            </summary>
+            <returns>A double representing the price of the vehicle</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Car.VehicleType">
+            <summary>
+            Returns the type of the vehicle
+            </summary>
+            <returns>A string representing the vehicle type</returns>
+        </member>
+        <member name="M:TicketClassLibrary.MC.Price(System.Boolean)">
+            <summary>
+            Returns the price of the vehicle
+            </summary>
+            <returns>A double representing the price of the vehicle</returns>
+        </member>
+        <member name="M:TicketClassLibrary.MC.VehicleType">
+            <summary>
+            Returns the type of the vehicle
+            </summary>
+            <returns>A string representing the vehicle type</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.Price(System.Boolean)">
+            <summary>
+            Returns the price of the vehicle
+            </summary>
+            <returns>A double representing the price of the vehicle</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.Brobizz(System.Boolean)">
+            <summary>
+            Returns the amount of discount of the ticket
+            </summary>
+            <param name="discount"></param>
+            <returns>A double that represents the discount of the ticket </returns>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.VehicleType">
+            <summary>
+            Returns the type of the vehicle
+            </summary>
+            <returns>A string representing the vehicle type</returns>
+        </member>
+    </members>
+</doc>
