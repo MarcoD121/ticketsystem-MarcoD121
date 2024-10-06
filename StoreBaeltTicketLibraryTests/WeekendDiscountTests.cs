@@ -21,5 +21,14 @@ namespace StoreBaeltTicketLibrary.Tests
             double actual = WeekendDiscount.PriceWithWeekendDiscount(vehicle, day);
             Assert.AreEqual(vehicle.Price(true) * 0.8, actual, 0.01);   
         }
+
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void PriceWithWeekendDiscountTestNotOK()
+        {
+            Vehicle vehicle = new Car();
+            WeekendDiscount.PriceWithWeekendDiscount(vehicle, "Monday");
+            Assert.Fail();
+        }
     }
 }

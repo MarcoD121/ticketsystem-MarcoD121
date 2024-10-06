@@ -47,7 +47,7 @@ namespace TicketClassLibrary.Tests
 
         [TestMethod]
         [DataRow("12345678")]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(Exception))]
         public void LisenceplateNotOK(string lisenceplate)
         {
             Vehicle vehicle = new Car();
