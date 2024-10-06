@@ -31,9 +31,9 @@ namespace TicketClassLibrary
         public DateTime Date { get; set; }
 
         /// <summary>
-        /// Returns the price of the vehicle
+        /// Returns the price of the ticket
         /// </summary>
-        /// <returns>A double representing the price of the vehicle</returns>
+        /// <returns>A double representing the price of the ticket</returns>
         public virtual double Price(bool discount)
         {
             return 0*Brobizz(discount);
